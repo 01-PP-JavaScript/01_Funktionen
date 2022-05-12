@@ -20,8 +20,18 @@ function test()
 ausgabeNamen();
  
 function ausgabeNamen() {
-    console.log("Hallo Bernhard!");
-    console.log("Hallo Mohanned!");
-    console.log("Hallo Bianca!");
+    let firstName = "Bianca";
+    console.log("Hallo " + firstName + "!");
 }
- 
+// console.log(firstName); // ---- stays in Vegas!
+
+/***** Funktionen 02b *****/
+// 2b. Parametisierung + Datenübergabevon Aussen
+
+ausgabeNamen2("Bernhard"); // ..args
+ausgabeNamen2("Atanas");
+ausgabeNamen2("Bianca");
+
+function ausgabeNamen2(firstName) { // Parameter
+    console.log("Hallo " + firstName + "!");
+}
